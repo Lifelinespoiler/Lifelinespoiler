@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Syntaxizer — personal writings, reflections, fragments, and observations.">
+  <title>Syntaxizer — Personal Writings</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="#top">syntaxizer<span>.</span></a>
+    <nav>
+      <a href="#writings">Writings</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">PERSONAL WRITINGS / 2026</p>
+      <h1>Thoughts that<br><em>needed somewhere</em><br>to go.</h1>
+      <p class="intro">
+        A quiet collection of reflections, fragments, memories, and the things
+        I notice when I slow down enough to actually look.
+      </p>
+      <a class="scroll-link" href="#writings">↓ Read the writings</a>
+    </section>
+
+    <section class="feature">
+      <div class="feature-label">FEATURED PIECE</div>
+      <article>
+        <p class="piece-meta">01 — Reflection</p>
+        <h2>Secerca sesal di sore hari.</h2>
+        <p class="piece-excerpt">
+          Andai seluruh kekalahan itu dapat ku terima dengan lapang dada,
+          mungkin saja kini aku sedang jongjon dengan aneka ragam keselarasan
+          dan variasi sudut pandang.
+        </p>
+        <button class="read-button" data-piece="featured">Read piece <span>↗</span></button>
+      </article>
+    </section>
+
+    <section class="writings" id="writings">
+      <div class="section-heading">
+        <p class="eyebrow">THE ARCHIVE</p>
+        <h2>Writings.</h2>
+      </div>
+
+      <div class="writing-grid">
+        <article class="writing-card" data-piece="featured">
+          <p class="piece-meta">01 / REFLECTION</p>
+          <h3>Secerca sesal di sore hari.</h3>
+          <p>On accepting defeat, perspective, and the strange connections between what we offer and what is needed.</p>
+          <span>Read →</span>
+        </article>
+
+        <article class="writing-card" data-piece="growing">
+          <p class="piece-meta">02 / NOTES</p>
+          <h3>Growing up, apparently.</h3>
+          <p>A fragmented thought about time, memory, and the uncomfortable clarity that comes from looking backwards.</p>
+          <span>Read →</span>
+        </article>
+
+        <article class="writing-card muted-card">
+          <p class="piece-meta">03 / SOON</p>
+          <h3>Something is coming.</h3>
+          <p>The archive is still small. That's alright. More thoughts will find their way here.</p>
+          <span>—</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div>
+        <p class="eyebrow">ABOUT SYNTAXIZER</p>
+        <h2>A place for<br><em>unfinished thoughts.</em></h2>
+      </div>
+      <div class="about-copy">
+        <p>
+          Syntaxizer is a personal writing archive — a place to put thoughts
+          into words without needing them to become perfectly polished first.
+        </p>
+        <p>
+          Some pieces are reflections. Some are fragments. Some might simply
+          be things worth remembering.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>syntaxizer.</span>
+    <span>Personal writings & reflections.</span>
+  </footer>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-inner">
+      <button class="close" id="close">×</button>
+      <p class="piece-meta" id="modal-meta"></p>
+      <h2 id="modal-title"></h2>
+      <div class="modal-body" id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
